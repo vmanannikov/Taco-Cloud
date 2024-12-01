@@ -6,3 +6,10 @@ spring:
   datasource:
     generate-unique-name: false
     name: tacocloud
+  cassandra:
+    local-datacenter: datacenter1
+    schema-action: recreate
+    keyspace-name: taco_cloud
+    username: tacocloud
+    password: s3cr3tP455w0rd
+    pool: 9042
